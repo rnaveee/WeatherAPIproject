@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WEATHER API</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="frame">
+            <div class="title">
+                WEATHER
+            </div>
+            <div class="info">
+                <div class="name" id="name">
+                    <div class="city" id="city">-</div>
+                    <div class="region" id="region"></div>
+                </div>
+                <div class="location">
+                    <input type="text" id="search" class="search" placeholder="Enter City">
+                    <button type="submit" class="search-button" onclick="getInput()">
+                        &gt;
+                    </button>
+                </div>
+                <div class="time-temp" id="time-temp">
+                    <div class="temp" id="temp">0°C</div>
+                    <div class="time" id="time">00:00</div>
+                </div>
+                <div class="stats">
+                    <div id="wind">Wind (kPh):</div>
+                    <div id="humidity">Humidity:</div>
+                    <div id="pressure">Pressure (inHg):</div>
+                    <div class="icon-weather" id="icon-weather">
+                    <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="awjfuoiahwga">
+                </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
